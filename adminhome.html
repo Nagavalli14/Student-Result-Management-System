@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home - Student Result Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Admin Panel - Student Result Management System</h1>
+        <hr>
+
+        <!-- Logout Button -->
+        <div class="text-end mb-4">
+            <a href="logout.php" class="btn btn-danger">Logout</a>
+        </div>
+
+        <!-- Display Notification Message -->
+        <?php if (isset($message) && $message != ""): ?>
+            <div class="alert alert-info">
+                <?php echo $message; ?>
+            </div>
+        <?php endif; ?>
+
+        <!-- Form for Exam Details -->
+        <div class="card mb-4 shadow">
+            <div class="card-header bg-primary text-white">
+                <h3>Enter Exam Details</h3>
+            </div>
+            <div class="card-body">
+                <form id="examForm" method="POST" enctype="multipart/form-data" action="admin.php">
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="examName" class="form-label">Name of Examination</label>
+                            <input type="text" class="form-control" id="examName" name="examName" placeholder="e.g., Semester 1" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="examType" class="form-label">Type of Examination</label>
+                            <select class="form-select" id="examType" name="examType" required>
+                                <option value="Regular">Regular</option>
+                                <option value="Backlog">Backlog</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="examMonth" class="form-label">Month</label>
+                            <input type="text" class="form-control" id="examMonth" name="examMonth" placeholder="e.g., January" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="examYear" class="form-label">Year</label>
+                            <input type="number" class="form-control" id="examYear" name="examYear" placeholder="e.g., 2024" required>
+                        </div>
+                    </div>
+
+                    <!-- Upload Excel File -->
+                    <div class="mb-3">
+                        <label for="resultFile" class="form-label">Select Excel File</label>
+                        <input type="file" class="form-control" id="resultFile" name="resultFile" accept=".xlsx, .xls, .csv" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">Submit Exam Details and Upload File</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Back to Home Button -->
+        <div class="text-center mt-4">
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

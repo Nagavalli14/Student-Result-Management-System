@@ -1,0 +1,147 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+nav
+{
+	position: fixed;
+	background-color: skyblue;
+	height: 70px;
+	width: 100%;
+	z-index: 1;
+}
+
+.logo
+{
+	font-size: 25px;
+	position: relative;
+	left: 5%;
+	color: white;
+	font-weight: bold;
+	line-height: 70px;
+	background-image: url('vishnulogo.jpg');
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: left;
+	padding-left: 60px;
+}
+
+ul
+{
+	position: relative;
+	float: right;
+	margin-right: 20px;
+}
+
+ul li 
+{
+	display: inline-block;
+	line-height: 70px;
+	margin: 0 5px;
+}
+
+ul li a 
+{
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+}
+
+.section1 {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.main_img {
+    width: 350px;
+    height: 350px;
+    margin-right: 20px; /* Ensures spacing between the image and text */
+    order: 1; /* Keeps the image on the left */
+}
+
+.img_text {
+    color: black;
+    font-size: 35px;
+    margin-left: 20px;
+    background: none;
+    order: 2; /* Ensures the text is on the right */
+    text-align: left; /* Align text within its box */
+}
+
+
+.welcome_img
+{
+	width: 100%;
+	height: 250px;
+}
+
+.container
+{
+	padding-top: 70px;
+}
+
+.teacher
+{
+	width: 90%;
+	height: 200px;
+}
+
+footer
+{
+	background-color: black;
+	height: 70px;
+	width: 100%;
+}
+
+.footer_text
+{
+	text-align: center;
+	color: white;
+	top: 20%;
+	position: relative;
+}
+
+.adm
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.form_deg{
+	padding-top: 200px;
+}
+.label_deg{
+	display: inline-block;
+	color: skyblue;
+	width: 100px;
+	text-align:right;
+	padding-top:10px;
+
+}
+.login_form{
+	background-color:white;
+	width:400px;
+	padding-top:70px;
+	padding-bottom:70px;
+
+
+}
+.title_deg{
+	background-color:skyblue;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	width:400px;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:20px;
+
+}
+.body_deg{
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100% 100%;
+
+}
