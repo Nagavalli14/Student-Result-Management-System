@@ -16,3 +16,13 @@ Frontend: HTML, CSS, Bootstrap, and JavaScript for a responsive and user-friendl
 Backend: PHP for server-side scripting.
 Database: MySQL for efficient data storage and retrieval.
 This system enhances administrative efficiency and provides students with easy access to their academic records.
+<p float="left">
+  <img src="images/.png" width="200" />
+  <img src="images/screenshot2.png" width="200" />
+  <img src="images/screenshot3.png" width="200" />
+  <img src="images/screenshot4.png" width="200" />
+  <img src="images/screenshot5.png" width="200" />
+  <img src="images/screenshot6.png" width="200" />
+  <img src="images/screenshot7.png" width="200" />
+</p>
+
