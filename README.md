@@ -25,4 +25,6 @@ This system enhances administrative efficiency and provides students with easy a
   <img src="images/152952.png" width="200" />
   <img src="images/152928.png" width="200" />
 </p>
+![Home Page](relative/path/to/152735.png)
+
 
